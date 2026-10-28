@@ -1,0 +1,55 @@
+/* Make header and containers responsive */
+header {
+  width: 100%;
+  max-width: 1200px; /* or your preferred max width */
+  margin: 30px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive table styles */
+form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  font-size: 14px; /* slightly smaller for mobile */
+}
+
+/* Make header text smaller on small screens */
+@media(max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  header {
+    height: auto;
+    flex-direction: column;
+  }
+  #dateWeekContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #dateWeekContainer input[type="date"],
+  #dateWeekContainer select {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  /* Smaller font for buttons on mobile */
+  button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+  /* Make images smaller in preview */
+  .img-preview {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
